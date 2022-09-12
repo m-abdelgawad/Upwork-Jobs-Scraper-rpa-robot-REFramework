@@ -12,35 +12,6 @@ This project was a milestone in my journey to study the RPA Developer With UiPat
 [![RPA Developer With UiPath Nanodegree by Udacity](readme_screenshots/RPA-Developer-With-UiPath-Nanodegree.png)](https://confirm.udacity.com/JVFFYTKP "RPA Developer With UiPath Nanodegree by Udacity")
 
 
-## States Screenshots
-
-### General Business Process Workflow
-<img src="readme_screenshots/0_Main.jpg">
-
-### Initialization State
-<img src="readme_screenshots/Initialization.jpg">
-
-<img src="readme_screenshots/Initialization_Exception.jpg">
-
-### Get Transaction Data State
-<img src="readme_screenshots/Get Transaction Data.jpg">
-
-<img src="readme_screenshots/Get Transaction Data_Exception.jpg">
-
-### Process Transaction State
-<img src="readme_screenshots/Process Transaction.jpg">
-
-<img src="readme_screenshots/Process Transaction_Business Exception.jpg">
-
-<img src="readme_screenshots/Process Transaction_Exception.jpg">
-
-### End Process State
-<img src="readme_screenshots/End Process.jpg">
-
-<img src="readme_screenshots/End Process_Exception.jpg">
-
-
-
 ## Workflows Screenshots
 
 ### Generic_CloseChromeTab Workflow
