@@ -1,0 +1,4 @@
+Exception source: 
+Throw SE. 
+Exception message: 
+Job will be ignored because payment is not verified

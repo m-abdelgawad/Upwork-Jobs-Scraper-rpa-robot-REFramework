@@ -1,40 +1,83 @@
-### Documentation is included in the Documentation folder ###
+# Upwork Jobs Scraper  || RPA Robot with UiPath RE Framework
 
-[REFrameWork Documentation](https://github.com/UiPath/ReFrameWork/blob/master/Documentation/REFramework%20documentation.pdf)
+## Process Short Description
+● Extract freelancing jobs details from Upwork in one specific specialization.
 
-### REFrameWork Template ###
-**Robotic Enterprise Framework**
+● Filter the extracted jobs based on the number of proposals, and payment verification status.
 
-* Built on top of *Transactional Business Process* template
-* Uses *State Machine* layout for the phases of automation project
-* Offers high level logging, exception handling and recovery
-* Keeps external settings in *Config.xlsx* file and Orchestrator assets
-* Pulls credentials from Orchestrator assets and *Windows Credential Manager*
-* Gets transaction data from Orchestrator queue and updates back status
-* Takes screenshots in case of system exceptions
+## Certification
+
+This project was a milestone in my journey to study the RPA Developer With UiPath Nanodegree provided by Udacity.
+
+[![RPA Developer With UiPath Nanodegree by Udacity](readme_screenshots/RPA-Developer-With-UiPath-Nanodegree.png)](https://confirm.udacity.com/JVFFYTKP "RPA Developer With UiPath Nanodegree by Udacity")
 
 
-### How It Works ###
+## States Screenshots
 
-1. **INITIALIZE PROCESS**
- + ./Framework/*InitiAllSettings* - Load configuration data from Config.xlsx file and from assets
- + ./Framework/*GetAppCredential* - Retrieve credentials from Orchestrator assets or local Windows Credential Manager
- + ./Framework/*InitiAllApplications* - Open and login to applications used throughout the process
+### General Business Process Workflow
+<img src="readme_screenshots/0_Main.jpg">
 
-2. **GET TRANSACTION DATA**
- + ./Framework/*GetTransactionData* - Fetches transactions from an Orchestrator queue defined by Config("OrchestratorQueueName") or any other configured data source
+### Initialization State
+<img src="readme_screenshots/Initialization.jpg">
 
-3. **PROCESS TRANSACTION**
- + *Process* - Process trasaction and invoke other workflows related to the process being automated 
- + ./Framework/*SetTransactionStatus* - Updates the status of the processed transaction (Orchestrator transactions by default): Success, Business Rule Exception or System Exception
+<img src="readme_screenshots/Initialization_Exception.jpg">
 
-4. **END PROCESS**
- + ./Framework/*CloseAllApplications* - Logs out and closes applications used throughout the process
+### Get Transaction Data State
+<img src="readme_screenshots/Get Transaction Data.jpg">
+
+<img src="readme_screenshots/Get Transaction Data_Exception.jpg">
+
+### Process Transaction State
+<img src="readme_screenshots/Process Transaction.jpg">
+
+<img src="readme_screenshots/Process Transaction_Business Exception.jpg">
+
+<img src="readme_screenshots/Process Transaction_Exception.jpg">
+
+### End Process State
+<img src="readme_screenshots/End Process.jpg">
+
+<img src="readme_screenshots/End Process_Exception.jpg">
 
 
-### For New Project ###
 
-1. Check the Config.xlsx file and add/customize any required fields and values
-2. Implement InitiAllApplications.xaml and CloseAllApplicatoins.xaml workflows, linking them in the Config.xlsx fields
-3. Implement GetTransactionData.xaml and SetTransactionStatus.xaml according to the transaction type being used (Orchestrator queues by default)
-4. Implement Process.xaml workflow and invoke other workflows related to the process being automated
+## Workflows Screenshots
+
+### Generic_CloseChromeTab Workflow
+<img src="readme_screenshots/1_Generic_CloseChromeTab.jpg">
+
+### Generic_FilterDataTable Workflow
+<img src="readme_screenshots/2_Generic_FilterDataTable.jpg">
+
+### Generic_OpenChromeTab Workflow
+<img src="readme_screenshots/3_Generic_OpenChromeTab.jpg">
+
+### Generic_QueueDispatcher Workflow
+<img src="readme_screenshots/4_Generic_QueueDispatcher.jpg">
+
+### Generic_QueuePerformer Workflow
+<img src="readme_screenshots/5_Generic_QueuePerformer.jpg">
+
+### Generic_SaveDataTable Workflow
+<img src="readme_screenshots/6_Generic_SaveDataTable.jpg">
+
+### Generic_TakeUserInput Workflow
+<img src="readme_screenshots/7_Generic_TakeUserInput.jpg">
+
+### Outlook_SendMail Workflow
+<img src="readme_screenshots/8_Outlook_SendMail.jpg">
+
+### Upwork_Login Workflow
+<img src="readme_screenshots/9_Upwork_Login.jpg">
+
+### Upwork_Logout Workflow
+<img src="readme_screenshots/10_Upwork_Logout.jpg">
+
+### Upwork_ScrapeJobs Workflow
+<img src="readme_screenshots/11_Upwork_ScrapeJobs.jpg">
+
+## About The Author
+
+* Author: Mohamed Abdel-Gawad Ibrahim
+* Contact: muhammadabdelgawwad@gmail.com
+* Phone: +201069052620 || +201147821232

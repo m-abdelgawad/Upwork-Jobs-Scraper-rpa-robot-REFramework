@@ -1,0 +1,4 @@
+Exception source: 
+Invoke - Logout from Upwork: Throw - start screen wasn't found. 
+Exception message: 
+Start screen was not found!
